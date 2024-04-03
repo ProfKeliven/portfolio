@@ -1,40 +1,74 @@
-            text-decoration: none;
-            color: pink;
-        }
-        .direita img{
-            width: 70%;
-            border-radius: 50px;
-            box-shadow: 20px 20px 20px black;
-        }
-        .direita, .esquerda{
-            width: 50vw;
-            padding: 100px;
-        }
-    </style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 70px;
+        background-color: salmon;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    ul li{
+        list-style-type: none;
+    }
+    header ul{
+        display: flex;
+        gap: 20px;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    .direita img{
+        width: 100%;
+        border-radius: 50px;
+        box-shadow: 20px 20px 20px black;
+    }
+    .direita, .esquerda{
+        width: 50vw;
+        padding: 100px;
+    }
+    .section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 70px;
+    }
+</style>
 </head>
 <body>
-    <main>
-        <header>
-            <div>
-                <h1>Keliven Demarchi</h1>
-           </div>
-        <nav>
-        <ul>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#sobre">Sobre mim</a></li>
-            <li><a href="#home">Home</a></li>
-        </ul>
-        </nav>
-    </header>
-        <div class="section" id="#home">
-            <div class="esquerda">
-                <h1>Seja bem vindo(a)</h1>
-                <p>Esse é meu portfólio de Desenvolvimento de Sistemas!</p>
-            </div>
-            <div class="direita">
-                <img src="https://media.licdn.com/dms/image/D4D03AQHPhItauHRyAA/profile-displayphoto-shrink_800_800/0/1682350513114?e=2147483647&v=beta&t=P9I08dSo2sJn1Vvs_MAa3_g2qVNDKJmxDyNBKg9R3SQ" alt="Keliven">
-            </div>
-        </div>
-    </main>
-    </body>
+<main>
+<header>
+    <div>
+        <h1>Keliven Demarchi</h1>
+   </div>
+<nav>
+<ul>
+    <li><a href="#projetos">Projetos</a></li>
+    <li><a href="#sobre">Sobre mim</a></li>
+    <li><a href="#home">Home</a></li>
+</ul>
+</nav>
+</header>
+<div class="section" id="#home">
+    <div class="esquerda">
+        <h1>Seja bem vindo(a)</h1>
+        <p>Esse é meu portfólio de Desenvolvimento de Sistemas!</p>
+    </div>
+    <div class="direita">
+        <img src="https://media.licdn.com/dms/image/D4D03AQHPhItauHRyAA/profile-displayphoto-shrink_800_800/0/1682350513114?e=2147483647&v=beta&t=P9I08dSo2sJn1Vvs_MAa3_g2qVNDKJmxDyNBKg9R3SQ" alt="Keliven">
+    </div>
+</div>
+</main>
+</body>
 </html>
