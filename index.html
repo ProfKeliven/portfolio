@@ -4,71 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<style>
-    *{
-        padding: 0;
-        margin: 0;
-    }
-    header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 70px;
-        background-color: salmon;
-        color: white;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-    ul li{
-        list-style-type: none;
-    }
-    header ul{
-        display: flex;
-        gap: 20px;
-    }
-    a{
-        text-decoration: none;
-        color: white;
-    }
-    .direita img{
-        width: 100%;
-        border-radius: 50px;
-        box-shadow: 20px 20px 20px black;
-    }
-    .direita, .esquerda{
-        width: 50vw;
-        padding: 100px;
-    }
-    .section{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 70px;
-    }
-</style>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 70px;
+            background-color: salmon;
+            color: white;
+        }
+        ul li{
+            list-style-type: none;
+        }
+        header ul{
+            display: flex;
+            gap: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .direita img{
+            width: 100%;
+            border-radius: 50px;
+            box-shadow: 20px 20px 20px black;
+        }
+        .direita, .esquerda{
+            width: 50vw;
+            padding: 100px;
+        }
+        .section{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 70px;
+        }
+        .meio{
+            text-align: center;
+            width: 100%;
+            padding: 70px;
+            background-color: bisque;
+        }
+
+        .projeto{
+            width: 29%;
+            display: flex;
+            flex-direction: column;
+            background-color: bisque;
+            gap: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #projetos{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+    </style>
 </head>
 <body>
 <main>
-<header>
-    <div>
-        <h1>Keliven Demarchi</h1>
-   </div>
-<nav>
-<ul>
-    <li><a href="#projetos">Projetos</a></li>
-    <li><a href="#sobre">Sobre mim</a></li>
-    <li><a href="#home">Home</a></li>
-</ul>
-</nav>
-</header>
-<div class="section" id="#home">
-    <div class="esquerda">
-        <h1>Seja bem vindo(a)</h1>
-        <p>Esse é meu portfólio de Desenvolvimento de Sistemas!</p>
+    <header>
+        <div>
+            <h1>Keliven Demarchi</h1>
     </div>
-    <div class="direita">
-        <img src="https://media.licdn.com/dms/image/D4D03AQHPhItauHRyAA/profile-displayphoto-shrink_800_800/0/1682350513114?e=2147483647&v=beta&t=P9I08dSo2sJn1Vvs_MAa3_g2qVNDKJmxDyNBKg9R3SQ" alt="Keliven">
+        <nav>
+            <ul>
+            
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <!-- Final do cabecalho e inicio da sessao sobre -->
+    <div class="section" id="home">
+        <div class="esquerda">
+            <h1>Seja bem vindo(a)</h1>
+            <p>Esse é meu portfólio de Desenvolvimento de Sistemas!</p>
+        </div>
+        <div class="direita">
+            <img src="https://media.licdn.com/dms/image/D4D03AQHPhItauHRyAA/profile-displayphoto-shrink_800_800/0/1682350513114?e=2147483647&v=beta&t=P9I08dSo2sJn1Vvs_MAa3_g2qVNDKJmxDyNBKg9R3SQ" alt="Keliven">
+        </div>
+    </div> <!-- final da sessão home -->
+    
+    <!-- inicio da sessão sobre -->
+    <div class="section" id="sobre">
+        <div class="meio">
+            <h2>Sobre mim</h2>
+            <p>
+                Olá, meu nome é Keliven, tenho 27 anos, sou professora de Desenvolvimento de Sistemas no Senai.<br />
+                Sou mãe de um menino chamado Khalil, ele tem 5 anos.
+            </p>
+        </div>
     </div>
-</div>
+    <!-- final da sessão sobre -->
+    <!-- Iniciando sessão de projetos -->
+    <div class="section" id="projetos">
+        <div class="projeto">
+            <img src="https://files.tecnoblog.net/wp-content/uploads/2023/06/cpu-processador-capa.png" alt="">
+            <h3>Projeto 1</h3>
+            <p>Projeto sobre componentes de computadores</p>
+        </div>
+        <div class="projeto">
+            <img src="https://files.tecnoblog.net/wp-content/uploads/2023/06/cpu-processador-capa.png" alt="">
+            <h3>Projeto 1</h3>
+            <p>Projeto sobre componentes de computadores</p>
+        </div>
+        <div class="projeto">
+            <img src="https://files.tecnoblog.net/wp-content/uploads/2023/06/cpu-processador-capa.png" alt="">
+            <h3>Projeto 1</h3>
+            <p>Projeto sobre componentes de computadores</p>
+        </div>
+        <div class="projeto">
+            <img src="https://files.tecnoblog.net/wp-content/uploads/2023/06/cpu-processador-capa.png" alt="">
+            <h3>Projeto 1</h3>
+            <p>Projeto sobre componentes de computadores</p>
+        </div>
+    </div>
 </main>
 </body>
 </html>
