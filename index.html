@@ -66,6 +66,37 @@
             flex-wrap: wrap;
             gap: 5px;
         }
+
+        /*dropdown*/
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 100px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+
     </style>
 </head>
 <body>
@@ -79,7 +110,15 @@
             
                 <li><a href="#home">Home</a></li>
                 <li><a href="#sobre">Sobre mim</a></li>
-                <li><a href="#projetos">Projetos</a></li>
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">Projetos</a>
+                    <div class="dropdown-content">
+                        <a href="#">1º Trimestre</a>
+                        <a href="#">2º Trimestre</a>
+                        <a href="#">3º Trimestre</a>
+                    </div>
+                </div>
+            
             </ul>
         </nav>
     </header> 
